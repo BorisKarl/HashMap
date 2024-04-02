@@ -1,23 +1,3 @@
-// function hash(name) {
-//   return name.charAt(0);
-// }
-
-function stringToNumber(string) {
-  let hashCode = 0;
-  for (let i = 0; i < string.length; i++) {
-    hashCode += string.charCodeAt(i);
-  }
-
-  return hashCode;
-}
-// console.log(stringToNumber("Boris"));
-// console.log(stringToNumber("Nicole"));
-
-// Arraybeschränkung!
-// if (index < 0 || index >= buckets.length) {
-//   throw new Error("Trying to access index out of bound");
-// }
-// Assignment
 
 class Node {
   constructor(key, value) {
@@ -235,19 +215,3 @@ console.log(hashMap.values());
 console.log(hashMap.entries());
 console.log(hashMap.clear());
 console.log(hashMap.buckets);
-
-/**
- * get(key) {
-    if (this.buckets === null) return;
-    for (let i = 0; i < this.buckets.length; i++) {
-      let head = this.buckets[i];
-      while (head !== null && head) {
-        this.nodeList.push(head);
-        head = head.next;
-      }
-    }
-    let result = this.nodeList.find((e) => e.key === key);
-    if (result) return result.key;
-    return null;
-  }
- */
