@@ -126,6 +126,8 @@ class HashMap {
 
   clear() {
     this.buckets = new Array(8);
+    let msg = "Buckets cleared!";
+    return msg;
   }
 
   keys() {
@@ -196,21 +198,24 @@ hashMap.set("27Ysaike", "fdddf");
 
 let result = hashMap.set("Dennis", "Staffel");
 
+console.log("hashMap.set('Dennis', 'Staffel'): ");
 console.log(result);
-console.log("Ausserhalb der Funktion: " + hashMap.load(hashMap.buckets));
-console.log(hashMap.loadFactor);
+console.log("hashMap.loadFactor: " + hashMap.loadFactor);
+console.log("hashMap.buckets: ");
 console.log(hashMap.buckets);
-console.log(hashMap.get("Dennis"));
+console.log('hashMap.get("Dennis")' + hashMap.get("Dennis"));
 //console.log(hashMap.nodeList);
-console.log(hashMap.has("boing"));
-console.log(hashMap.has("Dennis"));
+console.log("hashMap.has('boing'): " + hashMap.has("boing"));
+console.log("hashMap.has('Dennis'): " + hashMap.has("Dennis"));
 //
-console.log(hashMap.remove("Dennis"));
+console.log("hashMap.remove('Dennis'): " +  hashMap.remove("Dennis"));
+console.log('hashMap.buckets: ');
 console.log(hashMap.buckets);
+console.log('hashMap.nodeList: ')
 console.log(hashMap.nodeList);
-console.log(hashMap.length());
-console.log(hashMap.keys());
-console.log(hashMap.values());
-console.log(hashMap.entries());
-console.log(hashMap.clear());
-console.log(hashMap.buckets);
+console.log('hashMap.length(): ' + hashMap.length());
+console.log('hashMap.keys(): ' + hashMap.keys());
+console.log("hashMap.values(): " + hashMap.values());
+console.log('hashMap.entries(): ' + hashMap.entries());
+console.log('hashMap.clear(): ' + hashMap.clear());
+console.log('hashMap.buckets: ' + hashMap.buckets);
