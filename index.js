@@ -1,4 +1,3 @@
-
 class Node {
   constructor(key, value) {
     this.key = key;
